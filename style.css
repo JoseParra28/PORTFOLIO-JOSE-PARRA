@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Golos+Text&family=Kanit:ital,wght@1,100&family=Libre+Baskerville&family=Oswald&display=swap');
+
 /* =----------------------------------------------------------------------- gloval style */
+
 body{
     font-size: 16px;
     line-height: 1.5;
     overflow: hidden;
-    background-image: url(/images/cool-img.png);
+    background-image: url(/images/cool-img-2.jpg);
+}
+*:not(i){
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
 }
 *{
     margin: 0%;
@@ -18,12 +25,77 @@ a{
     text-decoration: none;
 }
 ul{
-
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content{
+    justify-content: space-between;
 }
 
 /* =----------------------------------------------------------------------- header */
-.header{
-    background-color: gray;
+header{
     padding: 20px 15px;
-
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
+header .logo{
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--skin-color);
+  
+}
+a{  
+    font-size: 24px;
+    color: var(--new-color);
+    font-weight: 20;
+    text-transform: uppercase;
+}
+header .hamburger-btn{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.hamburger-btn span{
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: var( --text-black-900);
+}
+
+span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: var(--text-black-900);
+}
+span::before{
+    top:-6px;
+}
+span::after{
+    top: 6px;
+}
+
