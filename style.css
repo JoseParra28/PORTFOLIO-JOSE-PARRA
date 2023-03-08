@@ -103,6 +103,7 @@ span::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body {
     overflow: hidden;
@@ -177,10 +178,18 @@ b {
     text-align: center;
     padding: 0 10%;
     overflow: hidden;
-    margin-top: 18%;
+    
 }
 .cols {
     width: 50%;
+}
+.cols0 {
+     z-index: 5;
+     margin-top: 30%;
+}
+.cols0-2{
+    margin: 100px 150px;
+    padding: 140px 120px;
 }
 .topline {
     display: flex;
@@ -197,11 +206,11 @@ b {
     bottom: 10px;
     font-weight: 600;
     color: red;
-    /* background-image: linear-gradient(to top, #364fa2 0, rgba(28, 35, 174, 0.2) 0, rgb(108, 97, 186));
+    background-image: linear-gradient(to top, #364fa2 0, rgba(28, 35, 174, 0.2) 0, rgb(108, 97, 186));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-color:transparent; */
+    -moz-text-fill-color:transparent;
 }
 h1 {
     display: block;
@@ -216,6 +225,24 @@ h1 {
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
     text-transform: capitalize;
+    position: relative;
+}
+.multitext::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 3px solid #1a3cac;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+       left: 0%;
+    }
 }
 p {
      display: block;
@@ -257,9 +284,11 @@ button:hover {
     position: relative;
     height: 100%;
     width: calc(130% - 80px);
-    top: -100px;
     right: 100px;
     animation: animateUser 0.7s linear infinite;
+    z-index: 9;
+    margin: 118px 4px;
+    bottom: 10%;
 }
 /* @keyframes animateUser {
     50%{
@@ -271,6 +300,16 @@ button:hover {
     position: absolute;
     width: 500px;
     height: 500px;
-    top: 10%;
+    bottom: 10%;
+    right: 5%;
+    z-index: 8;
     
+}
+.bubbles-2{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 10%;
+    left: 5%;
+    z-index: 4;
 }
