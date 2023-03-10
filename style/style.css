@@ -147,7 +147,7 @@ b {
 .nav-items {
     display: flex;
 }
-.nav-items li {
+.nav-items li a {
     list-style: none;
     margin: 0 15px;
     text-decoration: none;
@@ -162,6 +162,11 @@ b {
     font-size: 25px;
     color: var(--text-black-700);
     margin: 25px 10px;
+}
+li ::marker {
+    
+    text-transform: none;
+  
 }
 .nav-items li:hover, .links a  {
     background-image: linear-gradient(to top, #1a3cac 0, rgba(17, 24, 145, 0.2) 0, rgb(51, 39, 139)0, rgb(37, 15, 205));
@@ -185,11 +190,11 @@ b {
 }
 .cols0 {
      z-index: 5;
-     margin-top: 30%;
+     margin-top: 15%;
 }
 .cols0-2{
-    margin: 100px 150px;
-    padding: 140px 120px;
+    margin: 15px 17px;
+    padding: 103px 75px;
 }
 .topline {
     display: flex;
@@ -214,7 +219,7 @@ b {
 }
 h1 {
     display: block;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 900;
     color: var(  --text-black-700);
 }
@@ -253,7 +258,8 @@ p {
 .btns {
     width:  100%;
     position: relative;
-    left: 150px;
+    left: 21px;
+    display: flex;
 }
 button {
      outline: none;
@@ -266,7 +272,7 @@ button {
      color: var(--bg-white-100);
      background-image: linear-gradient(to top, #1a3cac 0, rgba(17, 24, 145, 0.2) 0, rgb(74, 62, 161)0, rgb(37, 15, 205));
      padding: 8px 14px;
-     margin: 40px;
+     margin: 15px;
      letter-spacing: 2px;
      box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.4);
      color: #3452b7;
@@ -298,8 +304,8 @@ button:hover {
 } */
 .bubbles {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     bottom: 10%;
     right: 5%;
     z-index: 8;
@@ -307,8 +313,8 @@ button:hover {
 }
 .bubbles-2{
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     top: 10%;
     left: 5%;
     z-index: 4;
