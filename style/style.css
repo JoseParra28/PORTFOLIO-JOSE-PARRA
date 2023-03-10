@@ -319,3 +319,43 @@ button:hover {
     left: 5%;
     z-index: 4;
 }
+
+/* -------------------- bubbles about */
+
+.bubbles-abt{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 55%;
+    right: 5%;
+    z-index: 8;
+    
+}
+.bubbles-abt-2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 45%;
+    left: 5%;
+    z-index: 4;
+}
+
+/* -------------------- bubbles skills */
+
+.bubbles-sk{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 55%;
+    right: 15%;
+    z-index: 8;
+    
+}
+.bubbles-sk-2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 45%;
+    left: 15%;
+    z-index: 4;
+}
